@@ -1,0 +1,10 @@
+{
+  "name": "supertags",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "routie": "^0.3.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}

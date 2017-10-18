@@ -1,0 +1,22 @@
+.upload-button {
+    background-color: #ffbc00;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    float: right;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        color: $white;
+        border: 0px solid;
+        background-color: #FFCB39; //$button-hover-bgcolor
+        transition: background-color 0.5s ease;
+    }
+
+}

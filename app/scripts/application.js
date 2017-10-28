@@ -1,12 +1,11 @@
-import AddLoanCtrl from './controller/addLoanCtrl.js';
+import RouteHandler from './common/routeHandler';
+import Constants from './common/constants';
 
 (function () {
-	routie({
-			'/shops' () {
-				AddLoanCtrl.init();
-			},
-			'*' () {
-				AddLoanCtrl.init();
-			}
-	});
+	let routeConfig = {};
+  routeConfig[Constants.TO_LOAN] = RouteHandler.toLoan;
+	routeConfig[Constants.TO_AMMORTIZATION] = RouteHandler.toAmmortization;
+	routeConfig['*'] = RouteHandler.toLoan;
+	routie(routeConfig);
+
 })();

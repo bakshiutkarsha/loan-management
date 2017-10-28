@@ -1,5 +1,5 @@
 import DomEventHandler from '../common/domEventHandler.js';
-import AddLoanTemplate from '../../templates/addLoan.html';
+import AddLoanTemplate from '../../templates/modal/addLoan.html';
 import AddLoanDomEvents from '../dom-events/addLoanDOMEvents.js';
 
 export default {
@@ -8,6 +8,8 @@ export default {
 	},
 
 	registerDOMEvents(){
-		DomEventHandler.renderMyTemplate('globalCntr', AddLoanTemplate);
+		DomEventHandler.renderMyTemplate('modalCntr', AddLoanTemplate);
+
+
 	}
 };

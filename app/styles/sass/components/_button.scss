@@ -18,5 +18,11 @@
         background-color: #FFCB39; //$button-hover-bgcolor
         transition: background-color 0.5s ease;
     }
+    &.save-form{
+      float: none;
+      width: 70%;
+      text-align: center;
+      margin: 20px 0;
+    }
 
 }

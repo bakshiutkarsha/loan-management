@@ -1,4 +1,4 @@
-import AddLoanView from '../view/addLoanView.js';
+import LoanView from '../view/loanView.js';
 
 export
 default {
@@ -7,6 +7,6 @@ default {
     },
 
     render: function() {
-        AddLoanView.render();
+        LoanView.render();
     }
 }

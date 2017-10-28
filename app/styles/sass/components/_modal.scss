@@ -1,0 +1,38 @@
+.modalCntr{
+  .bgOverlay{
+    @include overlay;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+    z-index: 6;
+  }
+
+  .overlay{
+    background: #fff;
+    z-index: 10;
+    padding: 10px 48px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 50%;
+    transform: translate(50%,10%);
+    .modal-heading{
+      font-size: 20px;
+      color: #4a90e2;
+      letter-spacing: 0.5px;
+      font-family: ProximaNova-Semibold;
+      line-height: 1.4;
+      &.loan-detail-heading{
+        margin-top: 30px;
+      }
+    }
+    .modal-sub-heading{
+      color: #5a5a5a;
+      line-height: 1.4;
+    }
+    .btn-cntr{
+      text-align: center;
+    }
+  }
+
+}

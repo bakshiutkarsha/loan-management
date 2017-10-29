@@ -1,14 +1,15 @@
 <div id="intNet">
     <div class="bgOverlay"></div>
     <div class="overlay noInt">
-      <img src="images/noInternet.png"/>
-      <p class="modal-heading">Enter User Details</p>
+      <img src="images/ic-close.svg" class="close-modal" id="close-modal"/>
+      <p class="modal-heading loan-detail-heading">Enter User Details</p>
+
       <!-- <p class="modal-sub-heading">quia dolor sit amet, consectetur</p> -->
       <div class="detail-cntr">
           <div class="form-group padding-top-30">
               <label class="">Full Name</label>
               <div class="input-field-cntr">
-                  <input type="text" class="input-field" id="flatNumber" placeholder="Enter full name">
+                  <input type="text" class="input-field" id="name" placeholder="Enter full name">
               </div>
 
           </div>
@@ -16,14 +17,14 @@
           <div class="form-group field-padding">
               <label class="">Phone number</label>
               <div class="input-field-cntr">
-                  <input type="text" class="input-field" id="flatNumber" placeholder="Enter valid phone number">
+                  <input type="number" class="input-field" id="contact" placeholder="Enter valid phone number">
               </div>
           </div>
 
           <div class="form-group field-padding">
               <label class="">Address</label>
               <div class="input-field-cntr">
-                  <input type="text" class="input-field" id="flatNumber" placeholder="Enter Address">
+                  <input type="text" class="input-field" id="address" placeholder="Enter Address">
               </div>
           </div>
 
@@ -33,35 +34,35 @@
            <div class="form-group field-padding">
                <label class="">Loan Amount</label>
                <div class="input-field-cntr">
-                   <input type="text" class="input-field" id="flatNumber" placeholder="Enter Loan Amount">
+                   <input type="text" class="input-field" id="amount" placeholder="Enter Loan Amount">
                </div>
            </div>
 
            <div class="form-group field-padding">
                <label class="">Rate of Interest</label>
                <div class="input-field-cntr">
-                   <input type="text" class="input-field" id="flatNumber" placeholder="(in %)">
+                   <input type="text" class="input-field" id="roi" placeholder="(in %)">
                </div>
            </div>
 
            <div class="form-group field-padding">
                <label class="">Term</label>
                <div class="input-field-cntr">
-                   <input type="text" class="input-field" id="flatNumber" placeholder="(in months)">
+                   <input type="text" class="input-field" id="term" placeholder="(in months)">
                </div>
            </div>
 
            <div class="form-group field-padding">
                <label class="">Disbursement Date</label>
                <div class="input-field-cntr">
-                   <input type="date" class="input-field" id="flatNumber">
+                   <input type="date" class="input-field" id="d-date">
                </div>
            </div>
 
            <div class="form-group field-padding">
                <label class="">Repayment Start Date</label>
                <div class="input-field-cntr">
-                   <input type="date" class="input-field" id="flatNumber">
+                   <input type="date" class="input-field" id="r-date">
                </div>
            </div>
 
@@ -80,11 +81,13 @@
                </div>
            </div>
 
-
+            <p class="note">
+                Note: All the fields are mandatory.
+            </p>
             <div class="btn-cntr">
-                <div class="upload-button save-form">
+                <button class="upload-button save-form active" id="save-form">
                      Save
-                </div>
+                </button>
             </div>
         </div>
     </div>

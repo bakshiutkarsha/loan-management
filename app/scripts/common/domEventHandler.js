@@ -20,6 +20,10 @@ default {
     bindEvent: function(id, currEvent, currData, currEventHandler) {
         $('#' + id).on(currEvent, currData, currEventHandler);
     },
+    
+    bind: function (id, currEvent, childElement, currData, currEventHandler) {
+        $(id).on(currEvent, childElement, currData, currEventHandler);
+    },
 
     bindClassEvent: function(className, currEvent, currData, currEventHandler) {
         $('.' + className).on(currEvent, currData, currEventHandler);

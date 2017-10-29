@@ -5,9 +5,11 @@
     opacity: 0.8;
     background: #000;
     z-index: 6;
+    @include fadeEffect;
   }
 
   .overlay{
+    @include fadeEffect;
     background: #fff;
     z-index: 10;
     padding: 10px 48px;
@@ -32,6 +34,18 @@
     }
     .btn-cntr{
       text-align: center;
+    }
+    .close-modal{
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 20px;
+      cursor: pointer;
+    }
+    .note{
+      font-size: 12px;
+      color: #ff2f2f;
+      padding: 20px 0;
     }
   }
 

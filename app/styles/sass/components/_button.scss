@@ -1,5 +1,5 @@
 .upload-button {
-    background-color: #ffbc00;
+    background-color: $buttonActive;
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
@@ -19,10 +19,17 @@
         transition: background-color 0.5s ease;
     }
     &.save-form{
+      border: 0;
       float: none;
       width: 70%;
       text-align: center;
       margin: 20px 0;
+      background: $buttonInactive;
+      cursor: not-allowed;
+      &.active{
+          background: $buttonActive;
+          cursor: pointer;
+      }
     }
 
 }

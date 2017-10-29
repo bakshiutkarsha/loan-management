@@ -3,9 +3,15 @@ import Utils from '../common/utils.js';
 import ModalView from '../view/modalView.js'
 
 
-export default {
-  openLoanModal: function(){
-    ModalView.render();
-  }
+let toggleViewMore  = function () {
+  $(this).parents('.settlement-row').toggleClass('active');
+}
 
+let openLoanModal = function(){
+  ModalView.render();
+}
+
+export default {
+  toggleViewMore:toggleViewMore,
+  openLoanModal:openLoanModal
 }

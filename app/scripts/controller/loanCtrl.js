@@ -1,4 +1,6 @@
 import LoanView from '../view/loanView.js';
+import Storage from '../common/webStorage';
+import Constants from '../common/constants';
 
 export
 default {
@@ -7,6 +9,6 @@ default {
     },
 
     render: function() {
-        LoanView.render();
+        LoanView.render(Storage.getCollection(Constants.STOARGE_ALL_LOANS));
     }
 }

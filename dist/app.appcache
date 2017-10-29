@@ -2,14 +2,16 @@ CACHE MANIFEST
 
 CACHE:
 index.html
+images/defaultImg.d64795c9.png
+images/favicon.f5e07bc6.ico
+images/ic-close.dc4c1195.svg
 fonts/ProximaNova-Bold.4ebd1d97.otf
 fonts/ProximaNova-Light.bb107b69.otf
 fonts/ProximaNova-Regular.225bf58e.otf
 fonts/ProximaNova-Semibold.7403e7c4.otf
-images/defaultImg.d64795c9.png
-styles/main.58c3ad7d.css
-scripts/bundle.1216ac96.js
+scripts/bundle.95582cd9.js
 scripts/vendor.cad6a432.js
+styles/main.0b66befc.css
 
 NETWORK:
 *
@@ -17,4 +19,4 @@ NETWORK:
 SETTINGS:
 prefer-online
 
-# hash: 02a0c881b253b5c2d8a89ec0e907710d26e08ca006be9ac9e87fda4abe3e69d7
+# hash: 82c307d5adca59f46d3bba3e2c49ac27ad708a3b19a5d753fe9360cd8bcf4fab

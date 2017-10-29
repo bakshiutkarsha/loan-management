@@ -31,31 +31,37 @@
         <div class="table-cell"></div>
       </div>
     </div>
-    <div class="table-body" id="salesReportTable"><div class="table-row settlement-row active">
-  <div class="table-cell">
-    <img class="user-img" src="images/defaultImg.png" />
-      John Doe
-    <div class="more-settlement-amount-info">
-    <dl>
-      <dt>Address</dt>
-      <dd>Behind SBI, subash nagar, ushampur, 182101</dd>
-      <dt>Contact</dt>
-      <dd>9108558028</dd>
-    </dl>
-  </div>
-  </div>
-  <div class="table-cell">10,000</div>
-  <div class="table-cell"> 5% </div>
-  <div class="table-cell"> 15/7/2016</div>
-  <div class="table-cell"> 15/8/2016</div>
-  <div class="table-cell"><span class="STATUS_PAYMENT_CAPTURED">SUCCESS</span></div>
-  <div class="table-cell"><a href="javascript:void(0)" class="show-more"></a></div>
-  </div>
-</div>
+    <div class="table-body" id="salesReportTable">
+      <% if(loans.length > 0){ %>
+        <% for(var i =0; i < loans.length; i++){ %>
+            <div class="table-row settlement-row">
+            <div class="table-cell">
+              <img class="user-img" src="images/defaultImg.png" />
+                <%-loans[i].name%>
+              <div class="more-settlement-amount-info">
+              <dl>
+                <dt>Address</dt>
+                <dd><%- loans[i].address %></dd>
+                <dt>Contact</dt>
+                <dd><%-loans[i].contact %></dd>
+              </dl>
+            </div>
+            </div>
+            <div class="table-cell"><%- loans[i].loanAmount %></div>
+            <div class="table-cell"> <%-loans[i].rateOfInterest%> </div>
+            <div class="table-cell"> <%-loans[i].dDate%></div>
+            <div class="table-cell"> <%-loans[i].rDate%></div>
+            <div class="table-cell"><span class="STATUS_PAYMENT_CAPTURED">SUCCESS</span></div>
+            <div class="table-cell"><a href="javascript:void(0)" class="show-more"></a></div>
 
+          </div>
+        <% } %>
+      <% } else { %>
+        <div class="empty-state" id="empty-state">
+          <h4>No Current Loans</h4>
+        </div>
+      <% } %>
 
-  <div class="empty-state" id="empty-state" style="display: none">
-    <h4>No Transactions</h4>
+    </div>
   </div>
-</div>
 </div>

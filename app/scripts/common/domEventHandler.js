@@ -5,7 +5,8 @@ default {
     renderMyTemplate: function(id, inputTemplate, data) {
         var templateOptionsObj = {
             imports: {
-
+              convertToDecimal: Util.convertToDecimal,
+              periodicDate: Util.periodicDate
             }
         };
 
@@ -20,7 +21,7 @@ default {
     bindEvent: function(id, currEvent, currData, currEventHandler) {
         $('#' + id).on(currEvent, currData, currEventHandler);
     },
-    
+
     bind: function (id, currEvent, childElement, currData, currEventHandler) {
         $(id).on(currEvent, childElement, currData, currEventHandler);
     },

@@ -1,6 +1,7 @@
 import ModalView from '../view/modalView';
 import LoanModel from '../model/loansModel';
-import LoanCtrl from '../controller/loanCtrl';
+import LoanView from '../view/loanView';
+import Guid from '../common/guid';
 
 export default{
   closeModal: function(e){
@@ -20,9 +21,12 @@ export default{
       'term': $('#term').val(),
       'dDate': $('#d-date').val(),
       'rDate': $('#r-date').val(),
-      'rateOfInterest': $('#roi').val()
+      'rateOfInterest': $('#roi').val(),
+      'id': Guid.newGuid()
     }
     LoanModel.setAllLoans(formData);
+    console.log(LoanModel.getAllLoans());
+    LoanView.renderLoanTable(LoanModel.getAllLoans());
   },
 
   enableSubmitButton: function(){

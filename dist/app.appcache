@@ -9,8 +9,8 @@ fonts/ProximaNova-Bold.4ebd1d97.otf
 fonts/ProximaNova-Light.bb107b69.otf
 fonts/ProximaNova-Regular.225bf58e.otf
 fonts/ProximaNova-Semibold.7403e7c4.otf
-scripts/bundle.95582cd9.js
-scripts/vendor.cad6a432.js
+scripts/bundle.90aca2d7.js
+scripts/vendor.0477db35.js
 styles/main.0b66befc.css
 
 NETWORK:
@@ -19,4 +19,4 @@ NETWORK:
 SETTINGS:
 prefer-online
 
-# hash: 82c307d5adca59f46d3bba3e2c49ac27ad708a3b19a5d753fe9360cd8bcf4fab
+# hash: 0dcc99f5d17d7b5c1567357eea1ed1b28f9b9c4e5b7d9016eb0fae9b36cf0790

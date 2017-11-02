@@ -40,9 +40,9 @@
             <div class="table-body" id="salesReportTable">
                 <% for(var i =0; i < ammortizeTable.length; i++){ %>
 
-                    <div class="table-row settlement-row active">
+                    <div class="table-row loan-row active">
                         <div class="table-cell">
-                            <%-personalInfo.rDate %>
+                            <%-ammortizeTable[i][5] %>
                         </div>
                         <div class="table-cell"> <%- convertToDecimal(ammortizeTable[i][3])%></div>
                         <div class="table-cell"> <%- convertToDecimal(ammortizeTable[i][1])%></div>

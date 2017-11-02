@@ -1,15 +1,19 @@
 import Storage from '../common/webStorage';
 import Constants from '../common/constants';
 
-let allLoans = [];
 
 export default{
   setAllLoans: function(data){
-    allLoans.push(data);
-    Storage.setCollection(Constants.STOARGE_ALL_LOANS,allLoans);
+    let getLoans = Storage.getCollection(Constants.STOARGE_ALL_LOANS)
+    if(getLoans){
+      getLoans.push(data);
+      Storage.setCollection(Constants.STOARGE_ALL_LOANS,getLoans);
+    } else {
+      Storage.setCollection(Constants.STOARGE_ALL_LOANS, null)
+    }
   },
 
   getAllLoans: function(){
-    return allLoans;
+    return _.reverse(Storage.getCollection(Constants.STOARGE_ALL_LOANS));
   }
 }

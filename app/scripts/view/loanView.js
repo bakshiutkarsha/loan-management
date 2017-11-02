@@ -6,7 +6,7 @@ import LoanDomEvents from '../dom-events/loanDOMEvents.js';
 export default {
 	render (data) {
 		this.registerDOMEvents();
-		this.renderLoanTable(data);
+		this.renderLoanTable(_.reverse(data));
 	},
 
 	registerDOMEvents(){

@@ -30,6 +30,11 @@
                 border-bottom: solid 1px rgba(151, 151, 151, 0.1);
                 font-size: 14px;
                 color: #190f27;
+                .go-to-ammortize{
+                  cursor: pointer;
+                  color: #4a90e2;
+                  text-decoration: underline;
+                }
             }
         }
     }

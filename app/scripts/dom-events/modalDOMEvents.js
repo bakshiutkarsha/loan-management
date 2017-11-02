@@ -22,22 +22,31 @@ export default{
       'dDate': $('#d-date').val(),
       'rDate': $('#r-date').val(),
       'rateOfInterest': $('#roi').val(),
+      'years': $('#years').val(),
       'id': Guid.newGuid()
     }
     LoanModel.setAllLoans(formData);
     console.log(LoanModel.getAllLoans());
+    ModalView.renderNoModal();
     LoanView.renderLoanTable(LoanModel.getAllLoans());
+
   },
 
   enableSubmitButton: function(){
-    let feildArr = ['#name','#contact', '#address', '#amount', '#term', '#d-date', '#r-date', '#roi']
-    for(var i = 0; i < feildArr.length; i++){
-      if($(feildArr).val().length == 0){
-        return;
+      if( $('#name').val().length > 0 &&
+        $('#contact').val().length > 0 &&
+        $('#address').val().length > 0 &&
+        $('#amount').val().length > 0 &&
+        $('#term').val().length > 0 &&
+        $('#d-date').val().length > 0 &&
+        $('#r-date').val().length > 0 &&
+        $('#years').val().length > 0 &&
+        $('#roi').val().length > 0){
+          $('#save-form').addClass('active');
+          $('#save-form').removeAttr('disabled');
       } else {
-        $('#save-form').addClass('active');
-        $('#save-form').removeAttr('disabled');
+        $('#save-form').removeClass('active');
+        $('#save-form').attr('disabled', 'disabled');
       }
-    }
   }
 }

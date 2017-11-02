@@ -8,7 +8,6 @@
                 <div class="table-cell">RATE</div>
                 <div class="table-cell">DISBURSEMENT DATE</div>
                 <div class="table-cell">REPAYMENT DATE</div>
-                <div class="table-cell">AMMORTIZATION OPTION</div>
                 <div class="table-cell">TABLE</div>
                 <div class="table-cell"></div>
             </div>
@@ -16,7 +15,7 @@
         <div class="table-body" id="salesReportTable">
             <% if(loans.length > 0){ %>
                 <% for(var i =0; i < loans.length; i++){ %>
-                    <div class="table-row settlement-row">
+                    <div class="table-row loan-row">
                         <div class="table-cell">
                             <img class="user-img" src="images/defaultImg.png" />
                             <%-loans[i].name%>
@@ -45,7 +44,7 @@
                         <div class="table-cell">
                             <%-loans[i].rDate%>
                         </div>
-                        <div class="table-cell"><span class="STATUS_PAYMENT_CAPTURED">SUCCESS</span></div>
+
                         <div class="table-cell">
                             <a class="go-to-ammortize" data-id='<%-loans[i].id%>'> View</a>
                         </div>

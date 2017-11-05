@@ -30,5 +30,6 @@ export default {
 	commonDomEvents(){
 		DomEventHandler.bindClassEvent('show-more', 'click', LoanDomEvents.toggleViewMore);
 		DomEventHandler.bindClassEvent('go-to-ammortize', 'click', LoanDomEvents.getAmmortizeTable);
+		DomEventHandler.bindEvent('search', 'keyup', LoanDomEvents.searchLoan);
 	}
 };

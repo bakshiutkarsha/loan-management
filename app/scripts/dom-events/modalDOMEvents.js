@@ -29,7 +29,7 @@ export default{
     console.log(LoanModel.getAllLoans());
     ModalView.renderNoModal();
     LoanView.renderLoanTable(LoanModel.getAllLoans());
-
+    $('.loan-row:nth-child(1)').addClass('highlight-row');
   },
 
   enableSubmitButton: function(){

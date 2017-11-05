@@ -1,64 +1,61 @@
-<div class="table-container transaction-table">
-    <h5>ALL LOANS</h5>
-    <div class="table">
-        <div class="table-header">
-            <div class="table-row">
-                <div class="table-cell">USER</div>
-                <div class="table-cell">AMOUNT</div>
-                <div class="table-cell">RATE</div>
-                <div class="table-cell">DISBURSEMENT DATE</div>
-                <div class="table-cell">REPAYMENT DATE</div>
-                <div class="table-cell">TABLE</div>
-                <div class="table-cell"></div>
-            </div>
+<div class="table">
+    <div class="table-header">
+        <div class="table-row">
+            <div class="table-cell">USER</div>
+            <div class="table-cell">AMOUNT</div>
+            <div class="table-cell">RATE</div>
+            <div class="table-cell">DISBURSEMENT DATE</div>
+            <div class="table-cell">REPAYMENT DATE</div>
+            <div class="table-cell">TABLE</div>
+            <div class="table-cell"></div>
         </div>
-        <div class="table-body" id="salesReportTable">
-            <% if(loans.length > 0){ %>
-                <% for(var i =0; i < loans.length; i++){ %>
-                    <div class="table-row loan-row">
-                        <div class="table-cell">
-                            <img class="user-img" src="images/defaultImg.png" />
-                            <%-loans[i].name%>
-                                <div class="more-settlement-amount-info">
-                                    <dl>
-                                        <dt>Address</dt>
-                                        <dd>
-                                            <%- loans[i].address %>
-                                        </dd>
-                                        <dt>Contact</dt>
-                                        <dd>
-                                            <%-loans[i].contact %>
-                                        </dd>
-                                    </dl>
-                                </div>
-                        </div>
-                        <div class="table-cell">
-                            <%- loans[i].loanAmount %>
-                        </div>
-                        <div class="table-cell">
-                            <%-loans[i].rateOfInterest%>
-                        </div>
-                        <div class="table-cell">
-                            <%-loans[i].dDate%>
-                        </div>
-                        <div class="table-cell">
-                            <%-loans[i].rDate%>
-                        </div>
-
-                        <div class="table-cell">
-                            <a class="go-to-ammortize" data-id='<%-loans[i].id%>'> View</a>
-                        </div>
-                        <div class="table-cell">
-                            <a href="javascript:void(0)" class="show-more" ></a>
-                        </div>
-
+    </div>
+    <div class="table-body" id="salesReportTable">
+        <% if(loans.length > 0){ %>
+            <% for(var i =0; i < loans.length; i++){ %>
+                <div class="table-row loan-row">
+                    <div class="table-cell">
+                        <img class="user-img" src="images/defaultImg.png" />
+                        <%-loans[i].name%>
+                            <div class="more-settlement-amount-info">
+                                <dl>
+                                    <dt>Address</dt>
+                                    <dd>
+                                        <%- loans[i].address %>
+                                    </dd>
+                                    <dt>Contact</dt>
+                                    <dd>
+                                        <%-loans[i].contact %>
+                                    </dd>
+                                </dl>
+                            </div>
                     </div>
-              <% } %>
-            <% } else { %>
-                <div class="empty-state" id="empty-state">
-                    <h4>No Current Loans</h4>
+                    <div class="table-cell">
+                        <%- loans[i].loanAmount %>
+                    </div>
+                    <div class="table-cell">
+                        <%-loans[i].rateOfInterest%>
+                    </div>
+                    <div class="table-cell">
+                        <%-loans[i].dDate%>
+                    </div>
+                    <div class="table-cell">
+                        <%-loans[i].rDate%>
+                    </div>
+
+                    <div class="table-cell">
+                        <a class="go-to-ammortize" data-id='<%-loans[i].id%>'> View</a>
+                    </div>
+                    <div class="table-cell">
+                        <a href="javascript:void(0)" class="show-more" ></a>
+                    </div>
+
                 </div>
-            <% } %>
-        </div>
+          <% } %>
+        <% } else { %>
+            <div class="empty-state" id="empty-state">
+                <h4>No Current Loans</h4>
+            </div>
+        <% } %>
     </div>
 </div>

@@ -58,7 +58,7 @@
 }
 
 .table-container {
-    margin-top: 20px;
+    margin: 30px;
     border-radius: 4px;
     background-color: $white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -97,4 +97,33 @@
     width: 36px;
     vertical-align: middle;
     padding-right: 10px;
+}
+
+.search{
+      outline: none;
+      float: right;
+      border: 1px solid #d4d2d2;
+      width: 206px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      background-position: 95% 7px;
+      padding: 9px 10px;
+      background-size: 13px;
+      background-repeat: no-repeat;
+      background-image: url(../../../images/search.png);
+ }
+
+
+ //Animation
+ .highlight-row {
+   animation: highlight 1.5s;
+ }
+
+ @keyframes highlight {
+  0% {
+    background: #88b7ef;
+  }
+  100% {
+    background: none;
+  }
 }

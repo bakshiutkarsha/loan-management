@@ -3,6 +3,8 @@ import Utils from '../common/utils.js';
 import ModalView from '../view/modalView.js';
 import Constants from '../common/constants';
 import AmmortizeView from '../view/ammortizeView';
+import LoanModel from '../model/loansModel';
+import LoanView from '../view/loanView';
 
 let toggleViewMore = function() {
     $(this).parents('.loan-row').toggleClass('active');
@@ -55,10 +57,12 @@ let computeSchedule = function(loan_amount, interest_rate, payments_per_year, ye
     AmmortizeView.render(pageData);
 }
 
-
-
+let searchLoan = function(){
+  LoanView.renderLoanTable(LoanModel.searchFromAllLoans($(this).val()));
+}
 export default {
     toggleViewMore: toggleViewMore,
     openLoanModal: openLoanModal,
-    getAmmortizeTable: getAmmortizeTable
+    getAmmortizeTable: getAmmortizeTable,
+    searchLoan:searchLoan
 }

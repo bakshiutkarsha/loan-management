@@ -5,13 +5,14 @@ index.html
 images/defaultImg.d64795c9.png
 images/favicon.f5e07bc6.ico
 images/ic-close.dc4c1195.svg
+images/search.40fd6ec4.png
 fonts/ProximaNova-Bold.4ebd1d97.otf
 fonts/ProximaNova-Light.bb107b69.otf
 fonts/ProximaNova-Regular.225bf58e.otf
 fonts/ProximaNova-Semibold.7403e7c4.otf
-scripts/bundle.0d8e259b.js
+scripts/bundle.7df26fed.js
 scripts/vendor.0477db35.js
-styles/main.40932b74.css
+styles/main.f836634c.css
 
 NETWORK:
 *
@@ -19,4 +20,4 @@ NETWORK:
 SETTINGS:
 prefer-online
 
-# hash: 79aeee8aeb352ed95d1cc76ade5c5f981bfc052dfeb4dda5346f2c9666958c33
+# hash: c521be035f2de1b5ac7d6a465063232739ae9e02e2245d7c47edf86cc82240f1

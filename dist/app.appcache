@@ -2,15 +2,15 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-images/defaultImg.d64795c9.png
-images/favicon.f5e07bc6.ico
-images/ic-close.dc4c1195.svg
-images/search.40fd6ec4.png
 fonts/ProximaNova-Bold.4ebd1d97.otf
 fonts/ProximaNova-Light.bb107b69.otf
 fonts/ProximaNova-Regular.225bf58e.otf
 fonts/ProximaNova-Semibold.7403e7c4.otf
-scripts/bundle.7df26fed.js
+images/defaultImg.d64795c9.png
+images/favicon.f5e07bc6.ico
+images/ic-close.dc4c1195.svg
+images/search.40fd6ec4.png
+scripts/bundle.ae73585c.js
 scripts/vendor.0477db35.js
 styles/main.f836634c.css
 
@@ -20,4 +20,4 @@ NETWORK:
 SETTINGS:
 prefer-online
 
-# hash: c521be035f2de1b5ac7d6a465063232739ae9e02e2245d7c47edf86cc82240f1
+# hash: 18fc41e2f4b8ffb7793c6c45b24ad26536402e9a8bb025dc02688d66c920b5fb

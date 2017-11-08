@@ -2,6 +2,8 @@ import ModalView from '../view/modalView';
 import LoanModel from '../model/loansModel';
 import LoanView from '../view/loanView';
 import Guid from '../common/guid';
+import Storage from '../common/webStorage';
+import Constants from '../common/constants';
 
 export default{
   closeModal: function(e){
@@ -26,7 +28,6 @@ export default{
       'id': Guid.newGuid()
     }
     LoanModel.setAllLoans(formData);
-    console.log(LoanModel.getAllLoans());
     ModalView.renderNoModal();
     LoanView.renderLoanTable(LoanModel.getAllLoans());
     $('.loan-row:nth-child(1)').addClass('highlight-row');
